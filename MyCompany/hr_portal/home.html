@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyCompany</title>
+    <meta name="keywords" content="招聘,猎头,HR">
+    <meta name="description" content="社会化招聘平台">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/misc.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/home_hr_portal.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="navbar-fixed-top">
+      <div class="header-upper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 header-left">
+              <span style="display:inline-block;" data-i18n="logotext"></span>
+            </div>
+            <div class="col-xs-6 text-right header-right">
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span>
+                      <span data-i18n="customerrep"></span> <i class="glyphicon glyphicon-triangle-bottom"></i> 
+                    </span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-user"></i> <span data-i18n="customerrep"></span></a></li>
+                  </ul>
+              </div>|
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span>
+                      <span data-i18n="jobanalyst"></span> <i class="glyphicon glyphicon-triangle-bottom"></i> 
+                    </span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-user"></i> <span data-i18n="jobanalyst"></span></a></li>
+                  </ul>
+              </div>|
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span><span data-i18n="messages"></span> <span class="badge">1</span></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-headphones"></i> <span data-i18n="usermessages"></span></a></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-envelope"></i> <span data-i18n="systemmessages"></span></a></li>
+                  </ul>
+              </div>|
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span>张明明 <i class="glyphicon glyphicon-triangle-bottom"></i></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-user"></i> <span data-i18n="myprofile"></span></a></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-cog"></i> <span data-i18n="securitysettings"></span></a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-log-out"></i> <span data-i18n="logoff"></span></a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:;">
+              <img data-src="holder.js/160x50?bg=1085b0&amp;text=Logo">
+            </a>
+          </div>
+          <div id="headermenu" class="navbar navbar-default">
+            <ul class="nav navbar-nav navbar-left jscentered">
+              <li class="active"><a href="javascript:;" data-i18n="navcandidate"></a></li>
+              <li><a href="javascript:;" data-i18n="navopenings"></a></li>
+              <li><a href="javascript:;" data-i18n="navrecruiters"></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><button type="button" class="btn btn-success navbar-btn" data-i18n="btncreateopening"></button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <p data-i18n="[html]footer"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript libraries -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery-1.12.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/holder.min.js"></script>
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../assets/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../assets/js/transify-1.0.js"></script>
+    <script src="../assets/js/i18next.min.js"></script>
+    <script src="../assets/js/i18nextXHRBackend.min.js"></script>
+    <script src="../assets/js/i18next-jquery.min.js"></script>
+    <script src="../assets/js/handlebars-v4.0.5.js"></script>
+    <script type="text/javascript">
+      i18next.use(i18nextXHRBackend).init({
+        lng: 'cn', 
+        ns: 'home_hr_portal',
+        defaultNS: 'home_hr_portal',
+        load: 'currentOnly',
+        backend: {
+          loadPath: "/MyCompany/assets/locales/{{lng}}/{{ns}}.json"
+        },
+        fallbackLng: false,
+        debug: false
+      }, function(err, t) {
+        i18nextJquery.init(i18next, $);
+        $('[data-i18n]').localize();
+        fixNavLocation();
+      });
+
+      function fixNavLocation(){
+        var navWidth = $('.jscentered').width();
+        $('.jscentered').css('margin-left', '-' + (navWidth / 2)+'px');
+      }
+
+    /*
+      Make bootstrap dropdown menu show on hover
+      refer to http://stackoverflow.com/questions/8878033/how-to-make-twitter-bootstrap-menu-dropdown-on-hover-rather-than-click
+    */
+    $('[toggle-event="hover"]').hover(function(){ 
+      $('.dropdown-toggle', this).trigger('click'); 
+    });
+
+    // Prevent unexpected menu close when clicking on dropdown menu items
+    $('[toggle-event="hover"] .dropdown-menu').on('click', function(e) {
+      e.stopPropagation()
+    });
+    </script>
+</body>
+
+</html>

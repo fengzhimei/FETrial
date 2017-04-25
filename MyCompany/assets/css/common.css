@@ -1,0 +1,150 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Account for navbar and footer */
+body {
+  font-family: 'Hiragino Sans GB', Helvetica, 'Microsoft Yahei', arial, sans-serif;
+  color: #666;
+}
+
+body,
+.navbar-fixed-top,
+.footer {
+  min-width: 1170px;
+}
+
+@media (max-width: 1170px) {
+  .navbar-fixed-top {
+    position: absolute;
+  }
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.btn-default.btn-search {
+  background-color: #778b98;
+  color: white;
+  border-color: #778b98;
+  padding: 6px 12px;
+}
+
+.btn-search:hover,
+.btn-search:focus,
+.btn-search:active {
+  background-color: #778b98 !important;
+  color: white !important;
+  border-color: #778b98 !important;
+}
+
+.jscentered {
+    position:absolute;
+    left:50%;
+}
+
+.btn-primary-home {
+  color: #ffffff;
+  background-color: #3375c1;
+  border-color: #2e69ad;
+}
+
+.btn-primary-home:hover, 
+.btn-primary-home:focus, 
+.btn-primary-home:active {
+  color: #ffffff;
+  background-color: #2a61a1;
+  border-color: #214b7c;
+}
+
+.btn-primary-hr {
+  color: #fff;
+  background-color: #1085b0;
+  border-color: #0e7399;
+}
+
+.btn-primary-hr:hover, 
+.btn-primary-hr:focus, 
+.btn-primary-hr:active {
+  color: #ffffff;
+  background-color: #0d698b;
+  border-color: #094961;
+}
+
+.btn-primary-hh {
+  color: #ffffff;
+  background-color: #034a78;
+  border-color: #023b5f;
+}
+
+.btn-primary-hh:hover, 
+.btn-primary-hh:focus, 
+.btn-primary-hh:active {
+  color: #ffffff;
+  background-color: #023150;
+  border-color: #011623;
+}
+
+.btn-primary,
+.btn-default,
+.btn-info,
+.btn-warning,
+.btn-success,
+.btn-danger {
+  padding: 4px 10px;
+}
+
+.panel {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 0px;
+}
+
+.panel-body {
+  background-color:#fff;
+  padding:10px 15px;
+  font-size: 13px;
+}
+
+.custom-bs-tab-hh > li > a,
+.custom-bs-tab-hr > li > a {
+  color: inherit;
+  margin-right: 2px;
+  border-top: 4px solid transparent;
+  border-radius: 0;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
+.custom-bs-tab-hh > li.active > a, 
+.custom-bs-tab-hh > li.active > a:focus, 
+.custom-bs-tab-hh > li.active > a:hover {
+    cursor: default;
+    border-top-width: 4px;
+    border-top-color: #034a78;
+    border-bottom-color: transparent
+}
+
+.custom-bs-tab-hr > li.active > a, 
+.custom-bs-tab-hr > li.active > a:focus, 
+.custom-bs-tab-hr > li.active > a:hover {
+    cursor: default;
+    border-top-width: 4px;
+    border-top-color: #1085b0;
+    border-bottom-color: transparent
+}

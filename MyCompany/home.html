@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyCompany</title>
+    <meta name="keywords" content="招聘,猎头,HR">
+    <meta name="description" content="社会化招聘平台">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/misc.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="navbar-fixed-top">
+      <div class="header">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:;">
+				<img data-src="holder.js/160x50?bg=1d66b9&amp;text=MyCompany">
+            </a>
+          </div>
+          <div id="headermenu" class="navbar navbar-default">
+            <ul class="nav navbar-nav navbar-left jscentered">
+              <li class="active"><a href="javascript:;" data-i18n="navhome"></a></li>
+              <li><a href="javascript:;" data-i18n="navhr"></a></li>
+              <li><a href="javascript:;" data-i18n="navrecuriter"></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" data-i18n="login"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="slideBox" class="slideBox">
+      <div class="bd">
+        <ul>
+          <li><img data-src="holder.js/100px300?text=滚动图片1&amp;size=14px&amp;bg=b9b8b8"></li>
+          <li><img data-src="holder.js/100px300?text=滚动图片2&amp;size=14px&amp;bg=99d17d"></li>
+          <li><img data-src="holder.js/100px300?text=滚动图片3&amp;size=14px&amp;bg=5bb6dd"></li>
+        </ul>
+      </div>
+      <a class="prev glyphicon glyphicon-chevron-left" href="javascript:void(0)"></a>
+      <a class="next glyphicon glyphicon-chevron-right" href="javascript:void(0)"></a>
+    </div>
+
+    <div class="container homesearch">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs homesearchtab" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#position" aria-controls="position" role="tab" data-toggle="tab" data-i18n="srchbarjob"></a>
+            </li><!--
+            --><li role="presentation">
+              <a href="#headhunter" aria-controls="headhunter" role="tab" data-toggle="tab" data-i18n="srchbarrecruiter"></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="position">
+              <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">  
+                  <div class="input-group">
+                    <input type="text" data-i18n="[placeholder]srchbarjobhint" class="form-control">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-search">
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="headhunter">
+              <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">  
+                  <div class="input-group">
+                    <input type="text" data-i18n="[placeholder]srchbarrecuriterhint" class="form-control">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-search">
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row text-center mt20">
+        <div class="col-xs-4">
+          <img data-src="holder.js/140x140?text=优质猎头&amp;bg=99d17d" class="topfeaturepic">
+          <h3 data-i18n="featureheadline1"></h3>
+        </div>
+        <div class="col-xs-4">
+          <img data-src="holder.js/140x140?text=快速反馈&amp;bg=5bb6dd" class="topfeaturepic">
+          <h3 data-i18n="featureheadline2"></h3>
+        </div>
+        <div class="col-xs-4">
+          <img data-src="holder.js/140x140?text=交易透明&amp;bg=e8944a" class="topfeaturepic">
+          <h3 data-i18n="featureheadline3"></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotjobcontainer mt20">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <h2 style="color:white;" data-i18n="hotjoblist"></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="hotjob">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="hotjob">
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="hotjob">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xs-12">
+          <h2 data-i18n="famouscompany"></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+      </div>
+      <div class="row mt20">
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+        <div class="col-xs-2">
+          <img data-src="holder.js/100px100?text=名企">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <p data-i18n="[html]footer"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript libraries -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-1.12.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.min.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="assets/js/transify-1.0.js"></script>
+    <script src="assets/js/i18next.min.js"></script>
+    <script src="assets/js/i18nextXHRBackend.min.js"></script>
+    <script src="assets/js/i18next-jquery.min.js"></script>
+    <script src="assets/js/handlebars-v4.0.5.js"></script>
+    <script id="hotjoblist-template" type="x-handlebars-template">
+      <dl>
+        <dt>{{industryName}}</dt>
+        {{#each companys}}
+        <dd>
+          <i>{{name}}</i>|{{#each jobs}}<a href="#{{id}}">{{title}}</a>{{/each}}
+        </dd>
+        {{/each}}
+      </dl>
+    </script> 
+    <script type="text/javascript">
+      jQuery(".slideBox").slide({
+        mainCell:".bd ul",
+        effect:"leftLoop",
+        autoPlay:true,
+        delayTime:1000
+      });
+
+      i18next.use(i18nextXHRBackend).init({
+        lng: 'cn', 
+        ns: 'home',
+        defaultNS: 'home',
+        load: 'currentOnly',
+        backend: {
+          loadPath: "/MyCompany/assets/locales/{{lng}}/{{ns}}.json"
+        },
+        fallbackLng: false,
+        debug: false
+      }, function(err, t) {
+        i18nextJquery.init(i18next, $);
+        $('[data-i18n]').localize();
+        fixNavLocation();
+      });
+
+      function fixNavLocation(){
+        var navWidth = $('.jscentered').width();
+        $('.jscentered').css('margin-left', '-' + (navWidth / 2)+'px');
+      }
+
+      function retriveHotJobListData() {
+        var jobListData = {
+          industryName:"互联网IT", 
+          companys:
+          [
+            {
+              name:"腾讯",
+              jobs:
+              [
+                {
+                  id:"1", 
+                  title:"Unity3D开发工程师"
+                },
+                {
+                  id:"2", 
+                  title:"HY1-手游测试组长"
+                }
+              ]
+            }, 
+            {
+              name:"美团",
+              jobs:
+              [
+                {
+                  id:"3", 
+                  title:"城市运营高级经理"
+                },
+                {
+                  id:"4", 
+                  title:"Java研发工程师"
+                }
+              ]
+            },
+            {
+              name:"去哪儿",
+              jobs:
+              [
+                {
+                  id:"5", 
+                  title:"Web前端研发架构师"
+                },
+                {
+                  id:"6", 
+                  title:"高级产品经理"
+                }
+              ]
+            },
+            {
+              name:"天猫",
+              jobs:
+              [
+                {
+                  id:"7", 
+                  title:"产品经理"
+                },
+                {
+                  id:"8", 
+                  title:"前端工程师"
+                }
+              ]
+            },
+            {
+              name:"百度",
+              jobs:
+              [
+                {
+                  id:"9", 
+                  title:"搜索引擎开发工程师"
+                },
+                {
+                  id:"10", 
+                  title:"高级产品经理"
+                }
+              ]
+            }
+          ]
+        };
+
+        return jobListData;
+    };
+
+    var joblistSource   = $("#hotjoblist-template").html();
+    var joblistTemplate = Handlebars.compile(joblistSource);
+    var joblistHtml = joblistTemplate(retriveHotJobListData());
+    $(".hotjob").html(joblistHtml);
+
+    $('.hotjob').transify({
+        opacityOrig:.5
+      });
+    </script>
+</body>
+
+</html>

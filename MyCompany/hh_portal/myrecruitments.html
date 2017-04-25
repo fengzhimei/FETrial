@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyCompany</title>
+    <meta name="keywords" content="招聘,猎头,HR">
+    <meta name="description" content="社会化招聘平台">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/misc.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/home_hh_portal.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="no-megamenu">
+    <div class="navbar-fixed-top">
+      <div class="header-upper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 header-left">
+              <span data-i18n="logotext"></span>
+            </div>
+            <div class="col-xs-6 text-right header-right">
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span>
+                      <span data-i18n="customerrep"></span> <i class="glyphicon glyphicon-triangle-bottom"></i> 
+                    </span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-user"></i> <span data-i18n="customerrep"></span></a></li>
+                  </ul>
+              </div>|
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span><span data-i18n="messages"></span> <span class="badge">1</span></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-headphones"></i> <span data-i18n="usermessages"></span></a></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-envelope"></i> <span data-i18n="systemmessages"></span></a></li>
+                  </ul>
+              </div>|
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span>王建军 <i class="glyphicon glyphicon-triangle-bottom"></i></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-user"></i> <span data-i18n="myprofile"></span></a></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-cog"></i> <span data-i18n="securitysettings"></span></a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-log-out"></i> <span data-i18n="logoff"></span></a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="input-group">
+                <input type="text" data-i18n="[placeholder]srchhint" class="form-control">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-search">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div id="headermenu" class="navbar navbar-default">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../hh_portal/home.html" data-i18n="navhome"></a></li>
+                  <li class="active"><a href="javascript:;" data-i18n="navmyrecruitments"></a></li>
+                  <li><a href="../hh_portal/mytalents.html" data-i18n="navmytalents"></a></li>
+                  <li><a href="javascript:;" data-i18n="navmyreferrals"></a></li>
+                  <li>
+                    <a href="javascript:;">
+                      <span data-i18n="navmytodos"></span> <span class="badge">1</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt20 mb20">
+        <div class="col-xs-12">
+          <ul class="nav nav-tabs custom-bs-tab-hh" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#mypositions" aria-controls="mypositions" role="tab" data-toggle="tab" data-i18n="srchbarjob">我的职位</a>
+            </li>
+            <li role="presentation">
+              <a href="#importantpositions" aria-controls="importantpositions" role="tab" data-toggle="tab" data-i18n="srchbarrecruiter">重要职位</a>
+            </li>
+            <li role="presentation">
+              <a href="#favcompanies" aria-controls="favcompanies" role="tab" data-toggle="tab" data-i18n="srchbarrecruiter">收藏的公司</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="mypositions">
+              <div class="paginationcontainer">
+                <div class="row mt10">
+                  <div class="col-xs-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="pull-left">
+                          已发现 4 个结果
+                        </div>
+                        <div class="pull-right">
+                          <span>
+                            <a href="javascript:;" data-value="">上一页</a> | 
+                            <a href="javascript:;" data-value="">下一页</a> 
+                            <input type="input" class="pagenum" value="1"> 共 1 页
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="joblistingContainer">
+                <div class="row mt10">
+                  <div class="col-xs-6">
+                    <div class="panel panel-default jobItem jobItemUrgent">
+                      <div class="panel-body">
+                        <i class="urgentIcon"><b>急</b></i>
+                        <div class="row ">
+                            <div class="col-xs-12">
+                              <div class="jobCompany">
+                                <a href="javascript:;">北京奥盟合创科技有限公司</a> <span>(房地产/建筑/建材/工程)</span>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-4">
+                              <div class="jobLogo">
+                                <img src="../assets/img/samplelogo.jpg">
+                              </div>
+                            </div>
+                            <div class="col-xs-8 text-right">
+                              <div class="jobTitle">
+                                <a href="javascript:;">项目经理</a> <span>[#32968] 7天以前</span>
+                              </div>
+                              <div class="jobRequirement">
+                                北京  |  本科及以上  |  5年以上  |  需2人
+                              </div>
+                              <div class="jobBenefit">
+                                年薪: ￥36万  |  佣金: ￥79K (22%)  |  保证期:  6个月
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-12">
+                              <div class="jobStat">
+                                <span class="label label-default">5 猎头</span>
+                                <span class="label label-default">5 推荐</span>
+                                <span class="label label-default">1 Offer</span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel-footer">
+                        <ul class="myStatLeft pull-left">
+                          <li><a href="javascript:;">已推荐人数: <span>0</span></a></li>
+                          <li>拒绝: <span>0</span></li>
+                          <li>撤销: <span>0</span></li>
+                          <li>进行中: <span>0</span></li>
+                        </ul>
+                        <ul class="myStatRight pull-right">
+                          <li><button type="button" class="btn btn-primary btn-primary-hh">推荐候选人</button></li>
+                          <li><a href="javascript:;" data-toggle="tooltip" title="标记为重要"><span class="glyphicon glyphicon-flag"></span></a></li>
+                          <li><a href="javascript:;" id="ddddd" data-toggle="tooltip" title="移出我的职位"><span class="glyphicon glyphicon-trash"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="panel panel-default jobItem">
+                      <div class="panel-body">
+                        <i class="urgentIcon"><b>急</b></i>
+                        <div class="row ">
+                            <div class="col-xs-12">
+                              <div class="jobCompany">
+                                <a href="javascript:;">北京奥盟合创科技有限公司</a> <span>(房地产/建筑/建材/工程)</span>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-4">
+                              <div class="jobLogo">
+                                <img src="../assets/img/samplelogo.jpg">
+                              </div>
+                            </div>
+                            <div class="col-xs-8 text-right">
+                              <div class="jobTitle">
+                                <a href="javascript:;">项目经理</a> <span class="badge">重</span> <span>[#32968] 7天以前</span>
+                              </div>
+                              <div class="jobRequirement">
+                                北京  |  本科及以上  |  5年以上  |  需2人
+                              </div>
+                              <div class="jobBenefit">
+                                年薪: ￥36万  |  佣金: ￥79K (22%)  |  保证期:  6个月
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-12">
+                              <div class="jobStat">
+                                <span class="label label-default">5 猎头</span>
+                                <span class="label label-default">5 推荐</span>
+                                <span class="label label-default">1 Offer</span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel-footer">
+                        <ul class="myStatLeft pull-left">
+                          <li><a href="javascript:;">已推荐人数: <span>0</span></a></li>
+                          <li>拒绝: <span>0</span></li>
+                          <li>撤销: <span>0</span></li>
+                          <li>进行中: <span>0</span></li>
+                        </ul>
+                        <ul class="myStatRight pull-right">
+                          <li><button type="button" class="btn btn-primary btn-primary-hh">推荐候选人</button></li>
+                          <li><a href="javascript:;" data-toggle="tooltip" title="取消重要标记"><span class="glyphicon glyphicon-flag markasimpt"></span></a></li>
+                          <li><a href="javascript:;" data-toggle="tooltip" title="移出我的职位"><span class="glyphicon glyphicon-trash"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="panel panel-default jobItem">
+                      <div class="panel-body">
+                        <i class="urgentIcon"><b>急</b></i>
+                        <div class="row ">
+                            <div class="col-xs-12">
+                              <div class="jobCompany">
+                                <a href="javascript:;">北京奥盟合创科技有限公司</a> <span>(房地产/建筑/建材/工程)</span>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-4">
+                              <div class="jobLogo">
+                                <img src="../assets/img/samplelogo.jpg">
+                              </div>
+                            </div>
+                            <div class="col-xs-8 text-right">
+                              <div class="jobTitle">
+                                <a href="javascript:;">项目经理</a> <span>[#32968] 7天以前</span>
+                              </div>
+                              <div class="jobRequirement">
+                                北京  |  本科及以上  |  5年以上  |  需2人
+                              </div>
+                              <div class="jobBenefit">
+                                年薪: ￥36万  |  佣金: ￥79K (22%)  |  保证期:  6个月
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-12">
+                              <div class="jobStat">
+                                <span class="label label-default">5 猎头</span>
+                                <span class="label label-default">5 推荐</span>
+                                <span class="label label-default">1 Offer</span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel-footer">
+                        <ul class="myStatLeft pull-left">
+                          <li><a href="javascript:;">已推荐人数: <span>0</span></a></li>
+                          <li>拒绝: <span>0</span></li>
+                          <li>撤销: <span>0</span></li>
+                          <li>进行中: <span>0</span></li>
+                        </ul>
+                        <ul class="myStatRight pull-right">
+                          <li><button type="button" class="btn btn-primary btn-primary-hh">推荐候选人</button></li>
+                          <li><a href="javascript:;" data-toggle="tooltip" title="标记为重要"><span class="glyphicon glyphicon-flag"></span></a></li>
+                          <li><a href="javascript:;" data-toggle="tooltip" title="移出我的职位"><span class="glyphicon glyphicon-trash"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="panel panel-default jobItem jobItemUrgent">
+                      <div class="panel-body">
+                        <i class="urgentIcon"><b>急</b></i>
+                        <div class="row ">
+                            <div class="col-xs-12">
+                              <div class="jobCompany">
+                                <a href="javascript:;">北京奥盟合创科技有限公司</a> <span>(房地产/建筑/建材/工程)</span>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-4">
+                              <div class="jobLogo">
+                                <img src="../assets/img/samplelogo.jpg">
+                              </div>
+                            </div>
+                            <div class="col-xs-8 text-right">
+                              <div class="jobTitle">
+                                <a href="javascript:;">项目经理</a> <span>[#32968] 7天以前</span>
+                              </div>
+                              <div class="jobRequirement">
+                                北京  |  本科及以上  |  5年以上  |  需2人
+                              </div>
+                              <div class="jobBenefit">
+                                年薪: ￥36万  |  佣金: ￥79K (22%)  |  保证期:  6个月
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-12">
+                              <div class="jobStat">
+                                <span class="label label-default">5 猎头</span>
+                                <span class="label label-default">5 推荐</span>
+                                <span class="label label-default">1 Offer</span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel-footer">
+                        <ul class="myStatLeft pull-left">
+                          <li><a href="javascript:;">已推荐人数: <span>0</span></a></li>
+                          <li>拒绝: <span>0</span></li>
+                          <li>撤销: <span>0</span></li>
+                          <li>进行中: <span>0</span></li>
+                        </ul>
+                        <ul class="myStatRight pull-right">
+                          <li><button type="button" class="btn btn-primary btn-primary-hh">推荐候选人</button></li>
+                          <li><a href="javascript:;" data-toggle="tooltip" title="标记为重要"><span class="glyphicon glyphicon-flag"></span></a></li>
+                          <li><a href="javascript:;" data-toggle="tooltip" title="移出我的职位"><span class="glyphicon glyphicon-trash"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="paginationcontainer">
+                <div class="row mt10">
+                  <div class="col-xs-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="pull-left">
+                          已发现 4 个结果
+                        </div>
+                        <div class="pull-right">
+                          <span>
+                            <a href="javascript:;" data-value="">上一页</a> | 
+                            <a href="javascript:;" data-value="">下一页</a> 
+                            <input type="input" class="pagenum" value="1"> 共 1 页
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="importantpositions">
+              <div class="paginationcontainer">
+                <div class="row mt10">
+                  <div class="col-xs-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="pull-left">
+                          已发现 1 个结果
+                        </div>
+                        <div class="pull-right">
+                          <span>
+                            <a href="javascript:;" data-value="">上一页</a> | 
+                            <a href="javascript:;" data-value="">下一页</a> 
+                            <input type="input" class="pagenum" value="1"> 共 1 页
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="joblistingContainer">
+                <div class="row mt10">
+                  <div class="col-xs-6">
+                    <div class="panel panel-default jobItem">
+                      <div class="panel-body">
+                        <i class="urgentIcon"><b>急</b></i>
+                        <div class="row ">
+                            <div class="col-xs-12">
+                              <div class="jobCompany">
+                                <a href="javascript:;">北京奥盟合创科技有限公司</a> <span>(房地产/建筑/建材/工程)</span>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-4">
+                              <div class="jobLogo">
+                                <img src="../assets/img/samplelogo.jpg">
+                              </div>
+                            </div>
+                            <div class="col-xs-8 text-right">
+                              <div class="jobTitle">
+                                <a href="javascript:;">项目经理</a> <span class="badge">重</span> <span>[#32968] 7天以前</span>
+                              </div>
+                              <div class="jobRequirement">
+                                北京  |  本科及以上  |  5年以上  |  需2人
+                              </div>
+                              <div class="jobBenefit">
+                                年薪: ￥36万  |  佣金: ￥79K (22%)  |  保证期:  6个月
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row mt10">
+                            <div class="col-xs-12">
+                              <div class="jobStat">
+                                <span class="label label-default">5 猎头</span>
+                                <span class="label label-default">5 推荐</span>
+                                <span class="label label-default">1 Offer</span>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel-footer">
+                        <ul class="myStatLeft pull-left">
+                          <li><a href="javascript:;">已推荐人数: <span>0</span></a></li>
+                          <li>拒绝: <span>0</span></li>
+                          <li>撤销: <span>0</span></li>
+                          <li>进行中: <span>0</span></li>
+                        </ul>
+                        <ul class="myStatRight pull-right">
+                          <li><button type="button" class="btn btn-primary btn-primary-hh">推荐候选人</button></li>
+                          <li><a href="javascript:;" data-toggle="tooltip" title="取消重要标记"><span class="glyphicon glyphicon-flag markasimpt"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="paginationcontainer">
+                <div class="row mt10">
+                  <div class="col-xs-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="pull-left">
+                          已发现 1 个结果
+                        </div>
+                        <div class="pull-right">
+                          <span>
+                            <a href="javascript:;" data-value="">上一页</a> | 
+                            <a href="javascript:;" data-value="">下一页</a> 
+                            <input type="input" class="pagenum" value="1"> 共 1 页
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="favcompanies">
+              <div class="paginationcontainer">
+                <div class="row mt10">
+                  <div class="col-xs-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="pull-left">
+                          已发现 2 个结果
+                        </div>
+                        <div class="pull-right">
+                          <span>
+                            <a href="javascript:;" data-value="">上一页</a> | 
+                            <a href="javascript:;" data-value="">下一页</a> 
+                            <input type="input" class="pagenum" value="1"> 共 1 页
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="companylistingContainer">
+                <div class="row mt10">
+                  <div class="col-xs-6">
+                    <div class="panel panel-default companyItem">
+                      <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-4">
+                              <div class="companyLogo">
+                                <img src="../assets/img/samplelogo.jpg">
+                              </div>
+                            </div>
+                            <div class="col-xs-8 text-right">
+                              <div class="companyTitle">
+                                <a href="javascript:;" data-toggle="popover" data-content="北京奥盟合创科技有限公司(Beijing Ultimatech CO.,LTD)是一家专业的信息服务产品提供商。公司正式成立于2008年3月。其前身是清华大学TSINGREEN软件研发基地与天清谷盈科技有限公司，主要管理与技术人员均来自北京大学以及清华大学。">北京奥盟合创科技有限公司</a> <span class="label label-default">1个在招职位</span>
+                              </div>
+                              <div class="companyIndustry">
+                                房地产/建筑/建材/工程
+                              </div>
+                              <div class="companyInfo">
+                                北京  |  100 - 500人
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel-footer">
+                        <ul class="pull-right">
+                          <li>
+                            <button type="button" class="btn btn-primary btn-primary-hh">取消收藏</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="panel panel-default companyItem">
+                      <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-4">
+                              <div class="companyLogo">
+                                <img src="../assets/img/samplelogo.jpg">
+                              </div>
+                            </div>
+                            <div class="col-xs-8 text-right">
+                              <div class="companyTitle">
+                                <a href="javascript:;" data-toggle="popover" data-content="北京奥盟合创科技有限公司(Beijing Ultimatech CO.,LTD)是一家专业的信息服务产品提供商。公司正式成立于2008年3月。其前身是清华大学TSINGREEN软件研发基地与天清谷盈科技有限公司，主要管理与技术人员均来自北京大学以及清华大学。">北京奥盟合创科技有限公司</a> <span class="label label-default">1个在招职位</span>
+                              </div>
+                              <div class="companyIndustry">
+                                房地产/建筑/建材/工程
+                              </div>
+                              <div class="companyInfo">
+                                北京  |  100 - 500人
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="panel-footer">
+                        <ul class="pull-right">
+                          <li>
+                            <button type="button" class="btn btn-primary btn-primary-hh">取消收藏</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="paginationcontainer">
+                <div class="row mt10">
+                  <div class="col-xs-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="pull-left">
+                          已发现 2 个结果
+                        </div>
+                        <div class="pull-right">
+                          <span>
+                            <a href="javascript:;" data-value="">上一页</a> | 
+                            <a href="javascript:;" data-value="">下一页</a> 
+                            <input type="input" class="pagenum" value="1"> 共 1 页
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <p data-i18n="[html]footer"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript libraries -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery-1.12.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/holder.min.js"></script>
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../assets/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../assets/js/transify-1.0.js"></script>
+    <script src="../assets/js/i18next.min.js"></script>
+    <script src="../assets/js/i18nextXHRBackend.min.js"></script>
+    <script src="../assets/js/i18next-jquery.min.js"></script>
+    <script src="../assets/js/handlebars-v4.0.5.js"></script>
+    <script type="text/javascript">
+      i18next.use(i18nextXHRBackend).init({
+        lng: 'cn', 
+        ns: 'home_hh_portal',
+        defaultNS: 'home_hh_portal',
+        load: 'currentOnly',
+        backend: {
+          loadPath: "/MyCompany/assets/locales/{{lng}}/{{ns}}.json"
+        },
+        fallbackLng: false,
+        debug: false
+      }, function(err, t) {
+        i18nextJquery.init(i18next, $);
+        $('[data-i18n]').localize();
+      });
+
+      /*
+      Make bootstrap dropdown menu show on hover
+      refer to http://stackoverflow.com/questions/8878033/how-to-make-twitter-bootstrap-menu-dropdown-on-hover-rather-than-click
+      */
+      $('[toggle-event="hover"]').hover(function(){ 
+        $('.dropdown-toggle', this).trigger('click'); 
+      });
+
+      // Prevent unexpected menu close when clicking on dropdown menu items
+      $('[toggle-event="hover"] .dropdown-menu').on('click', function(e) {
+        e.stopPropagation()
+      });
+
+      $(function () {
+        $('[data-toggle="popover"]').popover({placement:'bottom', trigger:'hover'});
+        $('[data-toggle="tooltip"]').tooltip({placement:'top'});
+      })
+    </script>
+</body>
+
+</html>

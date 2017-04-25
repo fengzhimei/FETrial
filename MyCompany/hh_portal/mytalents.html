@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyCompany</title>
+    <meta name="keywords" content="招聘,猎头,HR">
+    <meta name="description" content="社会化招聘平台">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/misc.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/home_hh_portal.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="no-megamenu">
+    <div class="navbar-fixed-top">
+      <div class="header-upper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 header-left">
+              <span data-i18n="logotext"></span>
+            </div>
+            <div class="col-xs-6 text-right header-right">
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span>
+                      <span data-i18n="customerrep"></span> <i class="glyphicon glyphicon-triangle-bottom"></i> 
+                    </span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-user"></i> <span data-i18n="customerrep"></span></a></li>
+                  </ul>
+              </div>|
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span><span data-i18n="messages"></span> <span class="badge">1</span></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-headphones"></i> <span data-i18n="usermessages"></span></a></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-envelope"></i> <span data-i18n="systemmessages"></span></a></li>
+                  </ul>
+              </div>|
+              <div class="btn-group btn-group-option" toggle-event="hover">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span>王建军 <i class="glyphicon glyphicon-triangle-bottom"></i></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-user"></i> <span data-i18n="myprofile"></span></a></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-cog"></i> <span data-i18n="securitysettings"></span></a></li>
+                    <li class="divider"></li>
+                    <li><a href="javascript:;"><i class="glyphicon glyphicon-log-out"></i> <span data-i18n="logoff"></span></a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="input-group">
+                <input type="text" data-i18n="[placeholder]srchhint" class="form-control">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-search">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div id="headermenu" class="navbar navbar-default">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../hh_portal/home.html" data-i18n="navhome"></a></li>
+                  <li><a href="../hh_portal/myrecruitments.html" data-i18n="navmyrecruitments"></a></li>
+                  <li class="active"><a href="javascript:;" data-i18n="navmytalents"></a></li>
+                  <li><a href="javascript:;" data-i18n="navmyreferrals"></a></li>
+                  <li>
+                    <a href="javascript:;">
+                      <span data-i18n="navmytodos"></span> <span class="badge">1</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt10">
+        <div class="col-xs-12">
+          <button type="button" class="btn btn-success pull-right"><i class="fa fa-plus"></i> 添加人才</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container filtercontainer">
+      <div class="row mt10">
+        <div class="col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="filterrow">
+                <div class="filtertitle">
+                  工作地点:
+                </div>
+                <ul class="filtercriteria">
+                  <li><a href="javascript:;" class="selected">不限</a></li>
+                  <li><a href="javascript:;" data-code="010" data-name="北京">北京</a></li>
+                  <li><a href="javascript:;" data-code="020" data-name="上海">上海</a></li>
+                </ul>
+              </div>
+              <div class="filterrow">
+                <div class="filtertitle">
+                  年薪范围:
+                </div>
+                <ul class="filtercriteria">
+                  <li><a href="javascript:;" class="selected">不限</a></li>
+                  <li><a href="javascript:;" data-code="">10万以内</a></li>
+                  <li><a href="javascript:;" data-code="">10-20万</a></li>
+                  <li><a href="javascript:;" data-code="">20-30万</a></li>
+                  <li><a href="javascript:;" data-code="">30-50万</a></li>
+                  <li><a href="javascript:;" data-code="">50万以上</a></li>
+                </ul>
+              </div>
+              <div class="filterrow">
+                <div class="filtertitle">
+                  工作年限:
+                </div>
+                <ul class="filtercriteria">
+                  <li><a href="javascript:;" class="selected">不限</a></li>
+                  <li><a href="javascript:;" data-code="">3年以下</a></li>
+                  <li><a href="javascript:;" data-code="">3-5年</a></li>
+                  <li><a href="javascript:;" data-code="">5-8年</a></li>
+                  <li><a href="javascript:;" data-code="">8-10年</a></li>
+                  <li><a href="javascript:;" data-code="">10-15年</a></li>
+                  <li><a href="javascript:;" data-code="">15年以上</a></li>
+                </ul>
+              </div>
+              <div class="filterrow">
+                <div class="filtertitle">
+                  人才学历:
+                </div>
+                <ul class="filtercriteria">
+                  <li><a href="javascript:;" class="selected">不限</a></li>
+                  <li><a href="javascript:;" data-code="">本科</a></li>
+                  <li><a href="javascript:;" data-code="">硕士</a></li>
+                  <li><a href="javascript:;" data-code="">博士</a></li>
+                  <li><a href="javascript:;" data-code="">博士后</a></li>
+                  <li><a href="javascript:;" data-code="">MBA</a></li>
+                  <li><a href="javascript:;" data-code="">大专</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container paginationcontainer">
+      <div class="row mt10">
+        <div class="col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="pull-left">
+                已发现 3 个结果
+              </div>
+              <div class="pull-right">
+                <span>
+                  <a href="javascript:;" data-value="">上一页</a> | 
+                  <a href="javascript:;" data-value="">下一页</a> 
+                  <input type="input" class="pagenum" value="1"> 共 1 页
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container talentlistingContainer">
+      <div class="row mt10">
+        <div class="col-xs-6">
+          <div class="panel panel-default talentItem">
+            <div class="panel-body">
+              <div class="row">
+                  <div class="col-xs-2">
+                    <div class="talentPicture">
+                      <img src="../assets/img/male.jpg">
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="talentName">
+                      <a href="javascript:;">李强 <i class="fa fa-mars"></i></a>
+                      <div class="contactInfo pull-right">
+                        <span><i class="fa fa-phone"></i> 13912345678</span>
+                        <span><i class="fa fa-envelope-o"></i> liqiang@123.com</span>
+                      </div>
+                    </div>
+                    <div class="talentExp">
+                      28岁  |  5年工作经验  |  硕士
+                    </div>
+                    <div class="talentInfo">
+                      北京  |  高级软件开发工程师  |  目前在百度
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <ul class="talentStatLeft pull-left">
+                <li><a href="javascript:;">已推荐职位: <span>0</span></a></li>
+                <li>拒绝: <span>0</span></li>
+                <li>撤销: <span>0</span></li>
+                <li>进行中: <span>0</span></li>
+              </ul>
+              <ul class="talentStatRight pull-right">
+                <li><button type="button" class="btn btn-primary btn-primary-hh">删除人才</button></li>
+                <li><a href="javascript:;" data-toggle="tooltip" title="附件简历"><i class="fa fa-paperclip"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="panel panel-default talentItem">
+            <div class="panel-body">
+              <div class="row">
+                  <div class="col-xs-2">
+                    <div class="talentPicture">
+                      <img src="../assets/img/female.jpg">
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="talentName">
+                      <a href="javascript:;">刘宁 <i class="fa fa-venus"></i></a>
+                      <div class="contactInfo pull-right">
+                        <span><i class="fa fa-phone"></i> 13912345678</span>
+                        <span><i class="fa fa-envelope-o"></i> liuning@123.com</span>
+                      </div>
+                    </div>
+                    <div class="talentExp">
+                      28岁  |  5年工作经验  |  大专
+                    </div>
+                    <div class="talentInfo">
+                      上海  |  前端工程师  |  目前在腾讯
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <ul class="talentStatLeft pull-left">
+                <li><a href="javascript:;">已推荐职位: <span>0</span></a></li>
+                <li>拒绝: <span>0</span></li>
+                <li>撤销: <span>0</span></li>
+                <li>进行中: <span>0</span></li>
+              </ul>
+              <ul class="talentStatRight pull-right">
+                <li><button type="button" class="btn btn-primary btn-primary-hh">删除人才</button></li>
+                <li><a href="javascript:;" data-toggle="tooltip" title="附件简历"><i class="fa fa-paperclip"></i></a></li>
+                <li><a href="javascript:;" data-toggle="tooltip" title="在线简历"><span class="fa fa-table"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="panel panel-default talentItem">
+            <div class="panel-body">
+              <div class="row">
+                  <div class="col-xs-2">
+                    <div class="talentPicture">
+                      <img src="../assets/img/male.jpg">
+                    </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <div class="talentName">
+                      <a href="javascript:;">赵立 <i class="fa fa-mars"></i></a>
+                      <div class="contactInfo pull-right">
+                        <span><i class="fa fa-phone"></i> 13912345678</span>
+                        <span><i class="fa fa-envelope-o"></i> zhaoli@123.com</span>
+                      </div>
+                    </div>
+                    <div class="talentExp">
+                      34岁  |  10年工作经验  |  本科
+                    </div>
+                    <div class="talentInfo">
+                      北京  |  架构师  |  目前在淘宝
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <ul class="talentStatLeft pull-left">
+                <li><a href="javascript:;">已推荐职位: <span>0</span></a></li>
+                <li>拒绝: <span>0</span></li>
+                <li>撤销: <span>0</span></li>
+                <li>进行中: <span>0</span></li>
+              </ul>
+              <ul class="talentStatRight pull-right">
+                <li><button type="button" class="btn btn-primary btn-primary-hh">删除人才</button></li>
+                <li><a href="javascript:;" data-toggle="tooltip" title="在线简历"><span class="fa fa-table"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container paginationcontainer">
+      <div class="row mb20">
+        <div class="col-xs-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="pull-left">
+                已发现 3 个结果
+              </div>
+              <div class="pull-right">
+                <span>
+                  <a href="javascript:;" data-value="">上一页</a> | 
+                  <a href="javascript:;" data-value="">下一页</a> 
+                  <input type="input" class="pagenum" value="1"> 共 1 页
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <p data-i18n="[html]footer"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript libraries -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery-1.12.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/holder.min.js"></script>
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../assets/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../assets/js/transify-1.0.js"></script>
+    <script src="../assets/js/i18next.min.js"></script>
+    <script src="../assets/js/i18nextXHRBackend.min.js"></script>
+    <script src="../assets/js/i18next-jquery.min.js"></script>
+    <script src="../assets/js/handlebars-v4.0.5.js"></script>
+    <script type="text/javascript">
+      i18next.use(i18nextXHRBackend).init({
+        lng: 'cn', 
+        ns: 'home_hh_portal',
+        defaultNS: 'home_hh_portal',
+        load: 'currentOnly',
+        backend: {
+          loadPath: "/MyCompany/assets/locales/{{lng}}/{{ns}}.json"
+        },
+        fallbackLng: false,
+        debug: false
+      }, function(err, t) {
+        i18nextJquery.init(i18next, $);
+        $('[data-i18n]').localize();
+      });
+
+      /*
+      Make bootstrap dropdown menu show on hover
+      refer to http://stackoverflow.com/questions/8878033/how-to-make-twitter-bootstrap-menu-dropdown-on-hover-rather-than-click
+      */
+      $('[toggle-event="hover"]').hover(function(){ 
+        $('.dropdown-toggle', this).trigger('click'); 
+      });
+
+      // Prevent unexpected menu close when clicking on dropdown menu items
+      $('[toggle-event="hover"] .dropdown-menu').on('click', function(e) {
+        e.stopPropagation()
+      });
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip({placement:'top'});
+      })
+    </script>
+</body>
+
+</html>
